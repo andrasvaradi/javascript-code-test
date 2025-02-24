@@ -5,7 +5,6 @@ const client = new BookSearchApiClient('http://api.book-seller-example.com', 'js
 client.getBooksByAuthor('Shakespeare', 10)
   .then((books) => console.log(books))
   .catch((error) => {
-    // Browser-friendly error handling
     alert(`Error fetching books: ${error.message}`);
   });
 
